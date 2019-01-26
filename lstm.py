@@ -102,14 +102,7 @@ model.fit(X_train, y_train_hot, batch_size=100, epochs=50, verbose=1,validation_
 
 score,acc=model.evaluate(X_test, y_test_hot, batch_size=100)
 
-pred=model.predict(X_test)
-pred=np.argmax(pred,axis=1)
-y_test_hot=np.argmax(y_test_hot,axis=1)
-target_names = ['class 0', 'class 1', 'class 2','class 3', 'class 4', 'class 5','class 6', 'class 7', 'class 8', 'class 9']
-print(classification_report(y_test_hot,pred))
-#print(confusion_matrix(y_test_hot,pred))
 
-print (acc)
     
 
 
