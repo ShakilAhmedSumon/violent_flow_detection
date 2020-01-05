@@ -26,7 +26,7 @@ while(True):
     if ret: 
         # if video is still left continue creating images 
         # name = './data/frame' + str(currentframe) + '.jpg'
-        name = "shakil"+ "_" + str(i)+ '.jpg'
+        name = "name"+ "_" + str(i)+ '.jpg'
         print ('Creating...' + name) 
   
         # writing the extracted images 
